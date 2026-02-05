@@ -1,18 +1,16 @@
-# fitness-class-booking-bot
 # Fitness Class Booking Bot 🤖💪
 
-A simple Python-based bot that allows users to view available fitness classes and book a slot.
+An AI-powered Python chatbot that helps users view available fitness classes and book slots using simple natural language commands.
 
-## Features
-- View available classes (Yoga, Zumba, HIIT)
-- Book a class slot
-- Updates remaining slots after booking
+## 🚀 Features
+- 🤖 Chatbot interface (text-based)
+- 📋 View available classes (Yoga, Zumba, HIIT)
+- 🧠 Basic AI intent detection (understands user messages like "show classes", "book yoga")
+- ✅ Book a class slot
+- 🔄 Updates remaining slots after booking
 
-## Tech Stack
+## 🛠 Tech Stack
 - Python
+- Basic NLP (rule-based intent detection using regex)
 
-## How to Run
-1. Clone the repo
-2. Run:
-   ```bash
-   python app.py
+## 📦 Project Structure
