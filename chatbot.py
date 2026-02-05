@@ -36,7 +36,7 @@ def chatbot_response(user_input):
     if "book" in user_input or "enroll" in user_input:
         return book_class(user_input)
 
-    if "bye" in user_input or "exit" in user_input:
+    if user_input in ["bye", "exit", "quit"]:
         return "Goodbye! 💪 Stay fit!"
 
     return "🤖 I didn't understand that. Try: 'show classes' or 'book yoga'."
@@ -45,4 +45,11 @@ if __name__ == "__main__":
     print("🤖 Fitness Class Booking AI Chatbot")
     print("Type 'show classes' or 'book yoga/zumba/hiit'. Type 'exit' to quit.\n")
 
-   
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() in ["bye", "exit", "quit"]:
+            print("Bot: Goodbye! 💪 Stay fit!")
+            break
+
+        response = chatbot_response(user_input)
+        print("Bot:", response)
